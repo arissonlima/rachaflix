@@ -1,0 +1,161 @@
+body{
+  color: var(--secondary);
+  font-family: "Poppins", sans-serif;
+}
+
+.header-bg{
+  background-color: var(--secondary);
+}
+
+.header{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem 1.6rem;
+}
+
+.header .logo{
+  width: 20rem;
+}
+
+.principal{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 2rem 1rem;
+}
+
+.principal h1{
+  font-size: 4rem;
+}
+
+.principal p{
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+.principal textarea{
+  width: 100%;
+  max-width: 60rem;
+  height: 20rem;
+  outline: none;
+  padding: 2rem;
+  border: 3px solid var(--primary);
+  text-align: center;
+  font-size: 2rem;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  color: var(--primary);
+  resize: none;
+}
+
+.principal button{
+  background: var(--primary);
+  outline: none;
+  border: none;
+  padding: 2rem;
+  border-radius: 30px;
+  font-weight: 600;
+  font-size: 2rem;
+  text-transform: uppercase;
+  color: var(--text);
+  cursor: pointer;
+  transition: background 1s;
+  margin-bottom: 2rem;
+}
+
+.principal button:hover{
+  background: var(--accent);
+  opacity: 0.9;
+}
+
+.principal .clean{
+  background: var(--secondary);
+}
+
+.principal .clean:hover{
+  opacity: 0.9;
+  background: black;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px white; 
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: var(--primary); 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: var(--accent); 
+}
+
+ul{
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+ul li{
+  font-size: 1.6rem;
+}
+
+.footer-bg{
+  background-color: var(--secondary);
+  color: var(--text);
+}
+
+.footer{
+  padding: 2rem 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.footer img{
+  width: 160px;
+}
+
+.footer p{
+  font-size: 1.4rem;
+}
+
+.container{
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1024px;
+}
+
+@media(max-width: 600px){
+  .header .logo{
+    width: 16rem;
+  }
+
+  .principal{
+    text-align: center;
+    padding: 1.6rem;
+  }
+
+  .principal h1{
+    font-size: 3rem;
+  }
+
+  .principal p{
+    font-size: 2rem;
+  }
+
+  .footer{
+    padding: 2.6rem;
+  }
+}

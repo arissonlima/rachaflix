@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="./img/favicon.png" type="image/png">
+  <title>Sorteio | RachaFlix</title>
+  <link rel="stylesheet" href="./css/reset.css">
+  <link rel="stylesheet" href="./css/variables.css">
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+  <header class="header-bg">
+    <div class="header container">
+      <img class="logo" src="./img/logo.png" alt="Logo do RachaFlix">
+    </div>
+  </header>
+
+  <main class="principal">
+    <h1>Sorteador</h1>
+    <p>Cole a lista de nomes (um por linha)</p>
+    <textarea onfocus="colarConteudo()" id="nomesInput" rows="10" cols="30"></textarea>
+    <br />
+    <div class="actions">
+      <button onclick="sortearTimes()">Sortear Times</button>
+      <button onclick="limparTextarea()" class="clean">Limpar lista</button>
+    </div>
+    <ul id="timesList"></ul>
+  </main>
+
+  <footer class="footer-bg">
+    <div class="footer container">
+      <a target="_blank" href="https://www.arissonlima.dev"><img src="./img/logo_dev.png"
+          alt="Desenvolvido por Arisson Lima" title="Arisson Lima - Desenvolvedor Front-End"></a>
+      <p><strong>Versão:</strong> 1.0</p>
+    </div>
+  </footer>
+
+  <script src="./js/script.js"></script>
+</body>
+
+</html>
